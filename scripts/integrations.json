@@ -88,6 +88,13 @@
       }]
     },
     {
+      "name": "Outbound",
+      "dependencies": [{
+        "name": "Outbound",
+        "version": "0.1.0"
+      }]
+    },
+    {
       "name": "Optimizely",
       "dependencies": [{
         "name": "Optimizely-iOS-SDK",

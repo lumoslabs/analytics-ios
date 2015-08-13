@@ -208,6 +208,11 @@
 		32F6381C1A8134A600C65643 /* SEGKahunaIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F6381A1A8134A600C65643 /* SEGKahunaIntegration.m */; };
 		32F6381D1A8134A600C65643 /* SEGKahunaIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F6381A1A8134A600C65643 /* SEGKahunaIntegration.m */; };
 		6182B863DB2D44D1B463AE3B /* libPods-iOS Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AE4A015CBF4E95B18D10A7 /* libPods-iOS Tests.a */; };
+		6E095A251B7CFB1E00D5DBA5 /* SEGOutboundIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E095A231B7CFB1E00D5DBA5 /* SEGOutboundIntegration.h */; };
+		6E095A261B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E095A241B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m */; };
+		6E095A271B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E095A241B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m */; };
+		6E095A2E1B7D010A00D5DBA5 /* Outbound.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E095A2D1B7D010A00D5DBA5 /* Outbound.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E095A311B7D01D300D5DBA5 /* SEGOutboundIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E095A301B7D01D300D5DBA5 /* SEGOutboundIntegrationTests.m */; };
 		6E12DD831B3CA2A1005E35D0 /* SEGCrittercismIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E12DD821B3CA2A1005E35D0 /* SEGCrittercismIntegrationTests.m */; };
 		6E165A121B54771A002C1C40 /* GAI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E165A081B54771A002C1C40 /* GAI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E165A131B54771A002C1C40 /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E165A091B54771A002C1C40 /* GAIDictionaryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -520,6 +525,10 @@
 		32F9E6B31907300300ED295B /* libPods-AnalyticsTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AnalyticsTests.a"; path = "Pods/build/Debug-iphoneos/libPods-AnalyticsTests.a"; sourceTree = "<group>"; };
 		32F9E6B61907320700ED295B /* libPods-AnalyticsTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AnalyticsTests.a"; path = "Pods/build/Debug-iphoneos/libPods-AnalyticsTests.a"; sourceTree = "<group>"; };
 		32F9E6B91907323900ED295B /* libPods-Analytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Analytics.a"; path = "Pods/build/Debug-iphoneos/libPods-Analytics.a"; sourceTree = "<group>"; };
+		6E095A231B7CFB1E00D5DBA5 /* SEGOutboundIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEGOutboundIntegration.h; path = Outbound/SEGOutboundIntegration.h; sourceTree = "<group>"; };
+		6E095A241B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGOutboundIntegration.m; path = Outbound/SEGOutboundIntegration.m; sourceTree = "<group>"; };
+		6E095A2D1B7D010A00D5DBA5 /* Outbound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Outbound.h; path = Pods/Outbound/Outbound.h; sourceTree = "<group>"; };
+		6E095A301B7D01D300D5DBA5 /* SEGOutboundIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGOutboundIntegrationTests.m; path = Integrations/Outbound/SEGOutboundIntegrationTests.m; sourceTree = "<group>"; };
 		6E12DD821B3CA2A1005E35D0 /* SEGCrittercismIntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEGCrittercismIntegrationTests.m; path = Integrations/Crittercism/SEGCrittercismIntegrationTests.m; sourceTree = "<group>"; };
 		6E165A081B54771A002C1C40 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Pods/GoogleAnalytics/Headers/Public/GAI.h; sourceTree = "<group>"; };
 		6E165A091B54771A002C1C40 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Pods/GoogleAnalytics/Headers/Public/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
@@ -782,6 +791,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6E095A1D1B7CFAB900D5DBA5 /* Outbound */ = {
+			isa = PBXGroup;
+			children = (
+				6E095A231B7CFB1E00D5DBA5 /* SEGOutboundIntegration.h */,
+				6E095A241B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m */,
+			);
+			name = Outbound;
+			sourceTree = "<group>";
+		};
+		6E095A2F1B7D01BB00D5DBA5 /* Outbound */ = {
+			isa = PBXGroup;
+			children = (
+				6E095A301B7D01D300D5DBA5 /* SEGOutboundIntegrationTests.m */,
+			);
+			name = Outbound;
+			sourceTree = "<group>";
+		};
 		6E12DD811B3CA285005E35D0 /* Crittercism */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,6 +819,7 @@
 		6E16FFF31B33AD0600B4F7FE /* Integrations */ = {
 			isa = PBXGroup;
 			children = (
+				6E095A2F1B7D01BB00D5DBA5 /* Outbound */,
 				01C4F32A1B70440100938F50 /* Kahuna */,
 				6EB4681F1B39CDBD00A0E4B9 /* Amplitude */,
 				6EF6652D1B585DC900DC7EA1 /* AppsFlyer */,
@@ -920,6 +947,7 @@
 		D3D35174186242B4005586E7 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				6E095A2D1B7D010A00D5DBA5 /* Outbound.h */,
 				6E2AFA401B55852400C8A14E /* MOInbox.h */,
 				6E2AFA411B55852400C8A14E /* MOInboxViewController.h */,
 				6E2AFA3C1B55850C00C8A14E /* MOEHelperConstants.h */,
@@ -1153,6 +1181,7 @@
 				D3EDB64A18C315F100A88A7E /* Localytics */,
 				D3EDB64D18C315F100A88A7E /* Mixpanel */,
 				6E2AFA371B55841900C8A14E /* MoEngage */,
+				6E095A1D1B7CFAB900D5DBA5 /* Outbound */,
 				32A69C1F1979CF4A00D69943 /* Optimizely */,
 				32A8C60419107DBD00173AE5 /* Quantcast */,
 				D3EDB65018C315F100A88A7E /* Segmentio */,
@@ -1377,6 +1406,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E095A2E1B7D010A00D5DBA5 /* Outbound.h in Headers */,
 				6EB809541AFC135E00959050 /* Amplitude+SSLPinning.h in Headers */,
 				79D247EA1B4AF3C9002D8F90 /* SEGUXCamIntegration.h in Headers */,
 				6EB809561AFC136D00959050 /* AMPURLConnection.h in Headers */,
@@ -1588,6 +1618,7 @@
 				D331BD371860F5F0007CB22F /* TSResponse.h in Headers */,
 				D331BD381860F5F0007CB22F /* TSUtils.h in Headers */,
 				32A8C60719107DBD00173AE5 /* SEGQuantcastIntegration.h in Headers */,
+				6E095A251B7CFB1E00D5DBA5 /* SEGOutboundIntegration.h in Headers */,
 				EACB4DEA17C0BB3100624129 /* SEGAnalyticsUtils.h in Headers */,
 				EAA604C917C28C7C00911919 /* SEGAnalyticsRequest.h in Headers */,
 			);
@@ -1817,6 +1848,7 @@
 				3242C9BF1946AFF900FBE441 /* SEGTapstreamIntegration.m in Sources */,
 				3242C9B61946AFC800FBE441 /* SEGBugsnagIntegration.m in Sources */,
 				3242C9BB1946AFDD00FBE441 /* SEGLocalyticsIntegration.m in Sources */,
+				6E095A271B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m in Sources */,
 				3242C9AA1946AB4700FBE441 /* AnalyticsTests.m in Sources */,
 				3242C9B31946ADB000FBE441 /* SEGSegmentioIntegration.m in Sources */,
 				3242C9B11946ADA200FBE441 /* SEGBluetooth.m in Sources */,
@@ -1840,6 +1872,7 @@
 				3242C9AD1946AD9600FBE441 /* SEGAnalytics.m in Sources */,
 				3242C9BE1946AFF200FBE441 /* SEGTaplyticsIntegration.m in Sources */,
 				3242C9AF1946AD9B00FBE441 /* SEGAnalyticsUtils.m in Sources */,
+				6E095A311B7D01D300D5DBA5 /* SEGOutboundIntegrationTests.m in Sources */,
 				3242C9AE1946AD9900FBE441 /* SEGAnalyticsRequest.m in Sources */,
 				6EF665321B5860D400DC7EA1 /* SEGAppsFlyerIntegrationTests.m in Sources */,
 				6EB468211B39CE0B00A0E4B9 /* SEGAmplitudeIntegrationTests.m in Sources */,
@@ -1868,6 +1901,7 @@
 				EACB4DEB17C0BB3100624129 /* SEGAnalyticsUtils.m in Sources */,
 				32A8C60819107DBD00173AE5 /* SEGQuantcastIntegration.m in Sources */,
 				32DF327B194666DA004098C1 /* SEGTaplyticsIntegration.m in Sources */,
+				6E095A261B7CFB1E00D5DBA5 /* SEGOutboundIntegration.m in Sources */,
 				D3EDB65F18C315F100A88A7E /* SEGFlurryIntegration.m in Sources */,
 				D3EDB66518C315F100A88A7E /* SEGMixpanelIntegration.m in Sources */,
 				D3EDB66718C315F100A88A7E /* SEGSegmentioIntegration.m in Sources */,

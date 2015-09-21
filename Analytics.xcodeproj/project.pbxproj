@@ -231,6 +231,7 @@
 		6E85F3941B2F980B00763913 /* MPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E85F3931B2F980B00763913 /* MPLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EB809541AFC135E00959050 /* Amplitude+SSLPinning.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB809531AFC135E00959050 /* Amplitude+SSLPinning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EB809561AFC136D00959050 /* AMPURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB809551AFC136D00959050 /* AMPURLConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88314F7A1BB080A3006F7156 /* AnalyticsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 88314F791BB080A3006F7156 /* AnalyticsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D31C8F7E18A2D83700DA22A6 /* MPNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D31C8F7D18A2D83700DA22A6 /* MPNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D331BCED185BFAA1007CB22F /* MPSurvey.h in Headers */ = {isa = PBXBuildFile; fileRef = D331BCEC185BFAA1007CB22F /* MPSurvey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D331BCF2185BFF49007CB22F /* CRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D331BCF0185BFF49007CB22F /* CRFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -520,6 +521,9 @@
 		7E94C0EE18932A5B004BD132 /* KWBlockMatchEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWBlockMatchEvaluator.h; sourceTree = "<group>"; };
 		7E94C0EF18932A5B004BD132 /* KWBlockMatchEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWBlockMatchEvaluator.m; sourceTree = "<group>"; };
 		7F4FA16EBDB55C5FC1C286A4 /* Pods-iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Tests/Pods-iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		88314F751BB080A3006F7156 /* AnalyticsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88314F781BB080A3006F7156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88314F791BB080A3006F7156 /* AnalyticsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsFramework.h; sourceTree = "<group>"; };
 		CF9D8D528CEEAAA3F9A1B394 /* Pods-Analytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Analytics/Pods-Analytics.debug.xcconfig"; sourceTree = "<group>"; };
 		D309DBF218A2BD2900BA9F31 /* libFlurry_4.3.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_4.3.1.a; path = Pods/FlurrySDK/Flurry/libFlurry_4.3.1.a; sourceTree = "<group>"; };
 		D31C8F7D18A2D83700DA22A6 /* MPNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MPNotification.h; path = Pods/Mixpanel/Mixpanel/MPNotification.h; sourceTree = "<group>"; };
@@ -628,6 +632,13 @@
 				3242C99B1946A3E100FBE441 /* UIKit.framework in Frameworks */,
 				3242C99A1946A3E100FBE441 /* Foundation.framework in Frameworks */,
 				6182B863DB2D44D1B463AE3B /* libPods-iOS Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88314F711BB080A3006F7156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +762,23 @@
 				6E16FFF71B33AD3400B4F7FE /* SEGFlurryIntegrationTests.m */,
 			);
 			name = Flurry;
+			sourceTree = "<group>";
+		};
+		88314F761BB080A3006F7156 /* AnalyticsFramework */ = {
+			isa = PBXGroup;
+			children = (
+				88314F791BB080A3006F7156 /* AnalyticsFramework.h */,
+				88314F771BB080A3006F7156 /* Supporting Files */,
+			);
+			path = AnalyticsFramework;
+			sourceTree = "<group>";
+		};
+		88314F771BB080A3006F7156 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88314F781BB080A3006F7156 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D3D35174186242B4005586E7 /* Headers */ = {
@@ -1118,6 +1146,7 @@
 			children = (
 				F7200B7817659B2F003F3138 /* Analytics */,
 				EA722AF617C87BB00016E8B0 /* AnalyticsTests */,
+				88314F761BB080A3006F7156 /* AnalyticsFramework */,
 				F7200B7517659B2F003F3138 /* Frameworks */,
 				D3D35174186242B4005586E7 /* Headers */,
 				3242C99C1946A3E100FBE441 /* iOS Tests */,
@@ -1131,6 +1160,7 @@
 			children = (
 				F7200B7317659B2F003F3138 /* libAnalytics.a */,
 				3242C9981946A3E100FBE441 /* iOS Tests.xctest */,
+				88314F751BB080A3006F7156 /* AnalyticsFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1204,6 +1234,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		88314F721BB080A3006F7156 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88314F7A1BB080A3006F7156 /* AnalyticsFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7200B8517659B83003F3138 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1444,6 +1482,24 @@
 			productReference = 3242C9981946A3E100FBE441 /* iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		88314F741BB080A3006F7156 /* AnalyticsFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88314F8C1BB080A3006F7156 /* Build configuration list for PBXNativeTarget "AnalyticsFramework" */;
+			buildPhases = (
+				88314F701BB080A3006F7156 /* Sources */,
+				88314F711BB080A3006F7156 /* Frameworks */,
+				88314F721BB080A3006F7156 /* Headers */,
+				88314F731BB080A3006F7156 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnalyticsFramework;
+			productName = AnalyticsFramework;
+			productReference = 88314F751BB080A3006F7156 /* AnalyticsFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F7200B7217659B2F003F3138 /* Analytics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7200B8117659B2F003F3138 /* Build configuration list for PBXNativeTarget "Analytics" */;
@@ -1477,6 +1533,9 @@
 					3242C9971946A3E100FBE441 = {
 						TestTargetID = F7200B7217659B2F003F3138;
 					};
+					88314F741BB080A3006F7156 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 				};
 			};
 			buildConfigurationList = F7200B6E17659B2F003F3138 /* Build configuration list for PBXProject "Analytics" */;
@@ -1494,6 +1553,7 @@
 				F7200B7217659B2F003F3138 /* Analytics */,
 				EA25891E17C693C2000CEF61 /* Analytics.framework */,
 				3242C9971946A3E100FBE441 /* iOS Tests */,
+				88314F741BB080A3006F7156 /* AnalyticsFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -1505,6 +1565,13 @@
 			files = (
 				3242C9B41946AFA100FBE441 /* settings.json in Resources */,
 				3242C9A11946A3E100FBE441 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88314F731BB080A3006F7156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1667,6 +1734,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88314F701BB080A3006F7156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7200B6F17659B2F003F3138 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1771,6 +1845,82 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		88314F881BB080A3006F7156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AnalyticsFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88314F891BB080A3006F7156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = AnalyticsFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1914,6 +2064,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		88314F8C1BB080A3006F7156 /* Build configuration list for PBXNativeTarget "AnalyticsFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88314F881BB080A3006F7156 /* Debug */,
+				88314F891BB080A3006F7156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		EA25892117C693C2000CEF61 /* Build configuration list for PBXAggregateTarget "Analytics.framework" */ = {
 			isa = XCConfigurationList;
